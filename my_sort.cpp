@@ -105,7 +105,7 @@ int cmp_str_end(struct line first, struct line second) {
 	\param[in] cmp - comparator showing the way we sort
 	\param[out] arr - pointers on lines in order
 */
-void my_sort(struct line arr, int low, int high, int cmp) {
+void my_sort(struct line* arr, int low, int high, int cmp) {
 	int i = low;
 	int j = high;
 	int pivot = (j + i) / 2;
